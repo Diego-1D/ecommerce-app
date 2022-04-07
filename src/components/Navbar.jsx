@@ -1,59 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
+import { Navbar, Container, Nav, Button, ToggleButton, ButtonGroup } from 'react-bootstrap';
 
-const Navbar = () => {
+const Navbarr = () => {
 
     const state = useSelector((state) => state.handleCart);
 
-    console.log('Teste: ', state);
-
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
-                <div className="container">
-                    <NavLink className="navbar-brand fw-bold fs-4" to="/">
-                        Shopping
-                    </NavLink>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/products">Produtos</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">Sobre</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contato</NavLink>
-                            </li>
-                        </ul>
-                        <div className='buttons'>
+            <Navbar bg="light" expand="lg" className="py-3 shadow-sm">
+                <Container>
+                    <Navbar.Brand href="/">Shopping</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto ">
+                            <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
+                            <NavLink className="nav-link" to="/products">Produtos</NavLink>
+                            <NavLink className="nav-link" to="/about">Sobre</NavLink>
+                            <NavLink className="nav-link" to="/contact">Contato</NavLink>
+                        </Nav>
+                        <Nav variant='transparent' className='gap-3'>
                             <NavLink to="/login" className="btn btn-outline-dark">
                                 <i className="fa fa-sign-in me-1"></i>Login</NavLink>
-                            <NavLink to="/register" className="btn btn-outline-dark ms-2">
+                            <NavLink to="/register" className="btn btn-outline-dark">
                                 <i className="fa fa-user-plus me-1"></i>Cadastrar-se</NavLink>
-                            <NavLink to="/cart" className="btn btn-outline-dark ms-2">
+                            <NavLink to="/cart" className="btn btn-outline-dark">
                                 <i className="fa fa-shopping-cart me-1"></i>Cart ({state.length})</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </div>
     )
 }
 
-export default Navbar;
+export default Navbarr;
