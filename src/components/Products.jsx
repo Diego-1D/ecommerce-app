@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
-import { Card, Button, Col, Container } from 'react-bootstrap';
+import { Card, Button, Col, Container, Form, Row } from 'react-bootstrap';
 
 
 const Products = () => {
@@ -51,9 +51,9 @@ const Products = () => {
     }
 
 
-
     const ShowProducts = () => {
         const filterProduct = (cat) => {
+            console.log('Resposta', cat)
             setActive(cat);
             const updatedList = data.filter((e) => e.category === cat);
             if (cat == 'todos') {
@@ -64,7 +64,7 @@ const Products = () => {
         }
         return (
             <>
-                <Container className='buttons d-flex justify-content-center mb-5 pb-5'>
+                <Container className='buttons d-flex justify-content-center mb-5 pb-5  overflow-x-auto'>
                     <Button
                         variant='outline-dark me-2'
                         className={active === "todos" && 'btn-outline-dark active me-2'}
@@ -74,17 +74,27 @@ const Products = () => {
                         className={active === "masculino" && 'btn-outline-dark active '}
                         onClick={() => filterProduct("masculino")}>Masculino</Button>
                     <Button
-                          variant='outline-dark me-2'
+                        variant='outline-dark me-2'
                         className={active === "feminino" && 'btn-outline-dark active me-2'}
                         onClick={() => filterProduct("feminino")}>Feminino</Button>
                     <Button
-                          variant='outline-dark me-2'
+                        variant='outline-dark me-2'
                         className={active === "joias" && 'btn-outline-dark active me-2'}
                         onClick={() => filterProduct("joias")}>Jóias</Button>
                     <Button
-                          variant='outline-dark me-2'
+                        variant='outline-dark me-2'
                         className={active === "eletronicos" && 'btn-outline-dark active me-2'}
                         onClick={() => filterProduct("eletronicos")}>Eletrônicos</Button>
+                </Container>
+                <Container>
+
+                <Form.Select value={active} onChange={(ev) => filterProduct(ev.target.value)}>
+                    <option value="todos">Todos</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="joias">Joias</option>
+                    <option value="eletronicos">Eletrônicos</option>   
+                </Form.Select>
                 </Container>
                 {filter.map((product) => {
                     let title = product.title;
@@ -113,24 +123,22 @@ const Products = () => {
     }
 
     return (
-        <div>
-            <div className='container my-5 py-5'>
-                <div className='row'>
-                    <div className='col-12 mb-5'>
+            <Container className='my-5 py-5'>
+                <Row>
+                    <Col>
                         <h1 className='display-6 fw-bolder text-center'>Produtos mais recentes</h1>
                         <hr />
-                    </div>
-                </div>
-                <div className='row justify-content-center'>
+                    </Col>
+                </Row>
+                <Row className='justify-content-center'>
                     {
                         loading ?
                             <Loading />
                             :
                             <ShowProducts />
                     }
-                </div>
-            </div>
-        </div>
+                </Row>
+            </Container>
     )
 }
 

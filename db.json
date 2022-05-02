@@ -1,0 +1,316 @@
+{
+    "episodes": [
+        {
+            "id": 1,
+            "title": "Moletom",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2022/01/22/16428446020caabc2b71fd35641d238f861b07b9d8_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 2,
+            "title": "Camisa social",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2020/12/10/1607580310e427d6d1e68c47083c0313f807d8a19f_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 3,
+            "title": "Camisetas Casuais",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images2_pi/2019/03/29/15538523562599072616_thumbnail_600x799.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 4,
+            "title": "Camisa Ocasional",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/07/19/1626665678bfadfc226a05dc79dfbef4e1722cc89d_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 5,
+            "title": "Camisa Social",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/10/20/163469847353c92487be7d6be0c2100467d0a915ad_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 6,
+            "title": "Camisa Green",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/12/28/1640664951a613368184ed7f48b6bb2081c212d19b_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 7,
+            "title": "Camisa Pink",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/11/25/16378287628e48c0424f4f656838a655b0d94a7098_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 8,
+            "title": "Camiseta Polo",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "masculino",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/12/23/1640222214bab9c26a85ff44818dce8f160f056ea5_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 9,
+            "title": "Cropped",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "women's clothing",
+            "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ6XLWoVeuuG46hn2yCegbvDvp4QH3ZzjawHSDNMfvgHWUmw9yrvynrp8ixt6GJrYKSkG6QcogvpKuXl7i9-_7KeFgF_pcbqXIMiAy-gxNVwIBjh0HFmPGxBA&usqp=CAc",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 10,
+            "title": "Químono aberto com pendões",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "women's clothing",
+            "image": "https://img.ltwebstatic.com/images2_pi/2018/04/09/1523265566813254266_thumbnail_600x799.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 11,
+            "title": "Moletom",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "jewelery",
+            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR4h-FUrwIoeABEfgUu18cZ2VSAdXiX83o9Z0Q4nSGbEa_O-Z1v3a-ShV8qWkzehr0ujBlTki0NpCCxK6g0PYZ6m7118Wks5CbCAgBWTk9eBbhYq_nV6ImM&usqp=CAc",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 12,
+            "title": "Blazer",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "jewelery",
+            "image": "https://img.ltwebstatic.com/images3_pi/2020/04/19/1587275257b24461b1c8a72eb381ae2b6a7cb86bb7_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 13,
+            "title": "Cropped Feminino",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTDa9KFmY0K1lEJ1YfDrK0uxBjjv1AUMA7W95gg0LgLN5D1taDXm5o4xtzLBYC7L2hX26ij_mshCQ&usqp=CAc",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 14,
+            "title": "Blazer Orange",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://img.ltwebstatic.com/images3_pi/2021/09/13/1631516156b9ea0d30194f6101a10461ad407ba194_thumbnail_600x.webp",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 6,
+            "title": "Moletom",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "women's clothing",
+            "image": "https://m.media-amazon.com/images/I/51ItCHGRW6L._AC_SX679_.jpg",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 7,
+            "title": "Moletom",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "jewelery",
+            "image": "https://m.media-amazon.com/images/I/31V3+sUMGcL._AC_.jpg",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 8,
+            "title": "Moletom",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://lojasbesni.vteximg.com.br/arquivos/ids/294326-1000-1250/604508004-jardineira-jeans-juvenil-menina-barra-dobrada-jeans-16-c0a.jpg?v=637732722796530000",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 9,
+            "title": "Anel de casamento",
+            "price": 99.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "joias",
+            "image": "https://cdn.pixabay.com/photo/2017/08/12/18/15/rings-2634929__340.png",
+            "rating": {
+                "rate": 5.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 10,
+            "title": "Anel de diamante",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "joias",
+            "image": "https://cdn.pixabay.com/photo/2019/11/24/14/15/diamond-4649510__340.png",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 11,
+            "title": "Gargantilha",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "joias",
+            "image": "https://cdn.pixabay.com/photo/2021/02/01/04/02/ruby-5969322__340.png",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 12,
+            "title": "Pulseira",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "joias",
+            "image": "https://cdn.pixabay.com/photo/2015/03/09/14/03/gold-665722__340.jpg",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 13,
+            "title": "Joystick",
+            "price": 99.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://cdn.pixabay.com/photo/2019/11/15/13/23/button-4628422_960_720.jpg",
+            "rating": {
+                "rate": 5.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 14,
+            "title": "Notebook Apple",
+            "price": 99.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://cdn.pixabay.com/photo/2016/10/11/09/26/office-1730940__340.jpg",
+            "rating": {
+                "rate": 5.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 15,
+            "title": "Smartphone",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://cdn.pixabay.com/photo/2020/03/19/21/14/cellular-4948812__340.png",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 16,
+            "title": "Iphone",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://cdn.pixabay.com/photo/2013/07/12/18/39/smartphone-153650_960_720.png",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        },
+        {
+            "id": 17,
+            "title": "Joystick",
+            "price": 19.90,
+            "description": "Lorem ipsum dolor sit amet. Ut soluta atque nam cumque dolor aut vitae ullam ut possimus dolores magnam dignissimos id optio culpa. Qui impedit qui obcaecati ducimus ut pariatur enim cum illo exercitationem.",
+            "category": "eletronicos",
+            "image": "https://cdn.pixabay.com/photo/2021/06/30/10/04/controller-6376435__340.png",
+            "rating": {
+                "rate": 3.9,
+                "count": 120
+            }
+        }
+    ]
+}

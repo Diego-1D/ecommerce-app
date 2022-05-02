@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addCart } from '../redux/action';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 const Product = () => {
 
@@ -50,10 +51,10 @@ const Product = () => {
     const ShowProduct = () => {
         return (
             <>
-                <div className='col-md-6'>
-                    <img src={product.image} alt={product.title} height='400px' width='400px' />
-                </div>
-                <div className='col-md-6'>
+                <Col className='md-6 d-flex justify-content-center pb-5'>
+                    <Image src={product.image} alt={product.title} height='380px' width='380px' />
+                </Col>
+                <Col className='md-6'>
                     <h4 className='text-uppercase text-black-50'>
                         {product.category}
                     </h4>
@@ -64,26 +65,24 @@ const Product = () => {
                     </p>
                     <h3 className='display-6 fw-bold my-4'>$ {product.price}</h3>
                     <p className='lead'> {product.description}</p>
-                    <button className='btn btn-outline-dark px-4 py-2' onClick={() => addProduct(product)}>Add to Cart</button>
+                    <Button variant='transparent' className='btn btn-outline-dark px-4 py-2' onClick={() => addProduct(product)}>Add to Cart</Button>
                     <NavLink to='/cart' className='btn btn-dark ms-2 px-3 py-2'>Go to Cart</NavLink>
-                </div>
+                </Col>
             </>
         )
     }
 
     return (
-        <div>
-            <div className='container py-5'>
-                <div className='row py-4'>
-                    {
-                        loading ?
-                            <Loading />
-                            :
-                            <ShowProduct />
-                    }
-                </div>
-            </div>
-        </div>
+        <Container className='py-5'>
+            <Row className='gap-7'>
+                {
+                    loading ?
+                        <Loading />
+                        :
+                        <ShowProduct />
+                }
+            </Row>
+        </Container>
     )
 }
 
