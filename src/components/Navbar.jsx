@@ -10,11 +10,11 @@ const Navbarr = () => {
     return (
             <Navbar bg="dark" expand="lg" variant="dark" className="py-3 shadow-sm">
                 <Container>
-                    <Navbar.Brand href="/">Shopping</Navbar.Brand>
+                    <Navbar.Brand href="/home">Shopping</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
-                            <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
+                            <NavLink className="nav-link" aria-current="page" to="/home">Home</NavLink>
                             <NavLink className="nav-link" to="/products">Produtos</NavLink>
                             <NavLink className="nav-link" to="/about">Sobre</NavLink>
                             <NavLink className="nav-link" to="/contact">Contato</NavLink>
