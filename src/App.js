@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<Product />} />
-        </Routes>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<Product />} />
+          </Routes>
       </BrowserRouter>
     </>
   );

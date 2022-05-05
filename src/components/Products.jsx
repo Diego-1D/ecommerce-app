@@ -10,6 +10,25 @@ const Products = () => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     const [active, setActive] = useState('todos');
+    const [filterNone, setFilterNone] = useState(true);
+
+    useEffect(() => {
+        const scrollListener = () => {
+            if (window.innerWidth > 485) {
+                setFilterNone(true);
+            } else {
+                setFilterNone(false);
+            }
+        };
+
+        window.addEventListener("resize", scrollListener);
+
+        return () => {
+            window.removeEventListener("resize", scrollListener);
+        };
+    }, []);
+
+
 
     let componentMounted = true;
 
@@ -31,26 +50,6 @@ const Products = () => {
         getProducts();
     }, [])
 
-    const Loading = () => {
-        return (
-            <>
-                <div className='col-md-3'>
-                    <Skeleton height={350} />
-                </div>
-                <div className='col-md-3'>
-                    <Skeleton height={350} />
-                </div>
-                <div className='col-md-3'>
-                    <Skeleton height={350} />
-                </div>
-                <div className='col-md-3'>
-                    <Skeleton height={350} />
-                </div>
-            </>
-        )
-    }
-
-
     const ShowProducts = () => {
         const filterProduct = (cat) => {
             console.log('Resposta', cat)
@@ -64,7 +63,7 @@ const Products = () => {
         }
         return (
             <>
-                <Container className='buttons d-flex justify-content-center mb-5 pb-5  overflow-x-auto'>
+                <Container className={filterNone ? 'buttons d-flex justify-content-center mb-4 pb-4' : 'd-none'}>
                     <Button
                         variant='outline-dark me-2'
                         className={active === "todos" && 'btn-outline-dark active me-2'}
@@ -86,15 +85,15 @@ const Products = () => {
                         className={active === "eletronicos" && 'btn-outline-dark active me-2'}
                         onClick={() => filterProduct("eletronicos")}>Eletrônicos</Button>
                 </Container>
-                <Container>
 
-                <Form.Select value={active} onChange={(ev) => filterProduct(ev.target.value)}>
-                    <option value="todos">Todos</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="joias">Joias</option>
-                    <option value="eletronicos">Eletrônicos</option>   
-                </Form.Select>
+                <Container className={filterNone ? 'd-none' : 'd-flex pb-3'}>
+                    <Form.Select value={active} onChange={(ev) => filterProduct(ev.target.value)}>
+                        <option value="todos">Todos</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="joias">Joias</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                    </Form.Select>
                 </Container>
                 {filter.map((product) => {
                     let title = product.title;
@@ -123,22 +122,17 @@ const Products = () => {
     }
 
     return (
-            <Container className='my-5 py-5'>
-                <Row>
-                    <Col>
-                        <h1 className='display-6 fw-bolder text-center'>Produtos mais recentes</h1>
-                        <hr />
-                    </Col>
-                </Row>
-                <Row className='justify-content-center'>
-                    {
-                        loading ?
-                            <Loading />
-                            :
-                            <ShowProducts />
-                    }
-                </Row>
-            </Container>
+        <Container className='py-5'>
+            <Row>
+                <Col>
+                    <h1 className='display-6 fw-bolder text-center'>Produtos mais recentes</h1>
+                    <hr />
+                </Col>
+            </Row>
+            <Row className='justify-content-center'>
+                <ShowProducts />
+            </Row>
+        </Container>
     )
 }
 
